@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Pagina Apache</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-color="#3498DB"><h1>Realizacion de una pagina web con apache </h1> Creado por: Carlos Mateos Samuel Cabrera y Ignacio De Los Riscos </br> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"></a></section>
+				<section data-background-color="#3498DB"><h2>Instalacion de Apache</h2>
+						<p><strong>La instalacion de apache </strong>la hemos realizado en una maquina virtual de debian y hemos creado una pagina web en ella.</p>
+				</section>
+				<section data-background-color="#3498DB">
+					<h4><u>Hacer accesible nuestra pagina desde fuera del area de trabajo</u></h4>
+					<p>Hemos accedido a nuestro router como administrador y hemos abierto el puerto 80 y direccionado a la ip de nuestra maquina virtual. Esto hara que podamos acceder desde cualquier sitio a nuestra pagina. </p>
+				</section>
+				<section data-background-color="#3498DB">
+					<h2></h2>
+					<p>
+						<h4><u>Obtencion de DNS fijos</u></h4>
+						<p>Hemos procedido a meternos en la pagina web de no ip y dar de alta nuesta ip publica para poder tener un enlace fijo para nuestra pagina de modo que se pueda acceder sin necesidad de usar la ip publica.</p>
+					</p>
+				</section>
+				
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
